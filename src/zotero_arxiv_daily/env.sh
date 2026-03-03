@@ -1,0 +1,7 @@
+export ZOTERO_ID="17503144"
+export ZOTERO_KEY="rHXFmxXIcCIUjoWYnAgYYjYl"
+export SENDER="18874081210@163.com"
+export RECEIVER="LiaoJiaQi2019@163.com"
+export SENDER_PASSWORD="XAZPuSdpAdNEudGB"
+export OPENAI_API_KEY="sk-dELknMvndVGmRDunjNIenXjHbkAvVgzA4Uj4BXlXtHZpvB5w"
+export OPENAI_API_BASE="https://api.huiyan-ai.cn"

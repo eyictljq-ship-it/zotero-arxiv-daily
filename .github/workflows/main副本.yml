@@ -2,7 +2,7 @@ name: Send emails daily
 on:
   workflow_dispatch:
   schedule:
-    - cron: '10 8 * * *'
+    - cron: '0 22 * * *'
 
 jobs:
   calculate-and-send:
@@ -19,13 +19,13 @@ jobs:
 
       - name: Run script
         env:
-          ZOTERO_ID: ${{ secrets.ZOTERO_ID }}
-          ZOTERO_KEY: ${{ secrets.ZOTERO_KEY }}
-          SENDER: ${{ secrets.SENDER }}
-          RECEIVER: ${{ secrets.RECEIVER }}
-          SENDER_PASSWORD: ${{ secrets.SENDER_PASSWORD }}
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-          OPENAI_API_BASE: ${{ secrets.OPENAI_API_BASE }}
+          ZOTERO_ID: 17503144
+          ZOTERO_KEY: rHXFmxXIcCIUjoWYnAgYYjYl
+          SENDER: 18874081210@163.com
+          RECEIVER: LiaoJiaQi2019@163.com
+          SENDER_PASSWORD: XAZPuSdpAdNEudGB
+          OPENAI_API_KEY: sk-dELknMvndVGmRDunjNIenXjHbkAvVgzA4Uj4BXlXtHZpvB5w
+          OPENAI_API_BASE: https://api.huiyan-ai.cn
           CUSTOM_CONFIG: ${{ vars.CUSTOM_CONFIG }}
         run: |
           printf "%b\n" "$CUSTOM_CONFIG" > config/custom.yaml
